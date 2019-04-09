@@ -2,32 +2,135 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App select {
+  background: white;
+  border: 1px solid  rgb(167, 167, 167);
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* List of Stocks */
+
+.Company {
+  border: solid;
+  padding: 10px;
+  margin: 40px 20px;
+  height:100px;
 }
 
-.App-link {
-  color: #61dafb;
+
+table {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  font-size: 13px;
+  font-weight:500;
+  color:rgb(126, 126, 126);
+
 }
+
+td {
+  font-size: 18px;
+  width: 300px;
+  font-weight:400;
+
+}
+
+/* High/Low cursor */
+
+#hl {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+#bar{
+  display: inline-block;
+  border-top: solid;
+  position: relative;
+  border-color: grey;
+  height: 1px;
+  border-width: 2px;
+  width: 70px;
+  top: 37px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#dot{
+  position: relative;
+  text-align: right;
+  font-size: 45px;
+  color: rgb(83, 83, 168);
+  top: -28px;
+}
+
+/* Header */
+
+.Header {
+  background: #00D28A;
+  height: 100px;
+}
+
+.Header input {
+  margin: 35px auto;
+  background: #00AB72;
+  color: black;
+  border: none;
+  height: 30px;
+  width: 180px;
+  padding: 3px;
+}
+
+.Header input::placeholder{
+  color: black;
+}
+
+/* Detailed view */
+
+.Stock .TradingWidget {
+  position: relative;
+  margin-top: 0px;
+}
+
+.Stock ul span {
+  margin: 30px;
+  font-size: 30px;
+}
+
+.Stock button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 70px;
+  float: center;
+  cursor: pointer;
+
+}
+
+.Stock ul button {
+  border-radius: 5px;
+  background: white;
+  height: 30px;
+  width: 80px;
+  border: 1px solid rgb(167, 167, 167);
+}
+
+.Stock table {
+  margin: auto;
+  width: 60%;
+}
+
+.Stats {
+  text-align: left;
+  font-size: 17px;
+  margin: 100px;
+}
+
+.Stats ul {
+  margin: 20px;
+}
+
